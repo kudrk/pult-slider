@@ -1,0 +1,65 @@
+$laptops:1024px;
+$tablets:768px;
+$phones:480px;
+$mini:375px;
+
+@mixin laptops {
+  @media screen and (max-width: $laptops) {
+    @content;
+  }
+}
+
+@mixin tablets {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}
+
+@mixin mini {
+  @media screen and (max-width: $mini) {
+    @content;
+  }
+}
+
+.container {
+  @include laptops {
+    margin: 0 auto;
+    width: 992px;
+  }
+
+  @include tablets {
+    margin: 0 auto;
+    width: 540px;
+  }
+
+  @include phones {
+    margin: 0 auto;
+    width: 85%;
+  }
+}
+
+.btn {
+  @include mini {
+    min-width: 295px;
+  }
+}
+
+.btn_type_order {
+  @include tablets {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.arrow_type_right,
+.arrow_type_left {
+  @include laptops {
+    display: none;
+  }
+}

@@ -1,0 +1,26 @@
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  min-width: 360px;
+  border: 1px solid #A89365;
+  padding: 12px 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+
+  &_type_order {
+    color: #A89365;
+    margin-right: 40px;
+  }
+
+  &_type_project {
+    background: #A89365;
+    color: white;
+  }
+}

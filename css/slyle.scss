@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "FuturaPT";
+  src: url("../fonts/FuturaPT-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+body {
+  font-family: 'FuturaPT', Arial, sans-serif;
+  background-color: #FFFFFF;
+  color: black;
+  font-size: 1rem;
+  line-height: 1.42;
+  margin: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 14px
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px
+  }
+}

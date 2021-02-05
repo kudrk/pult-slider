@@ -1,0 +1,27 @@
+.slider {
+  position: relative;
+}
+
+.description {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #575757;
+}
+
+.arrow_type_right {
+  height: 2.25rem;
+  top: 20%;
+  position: absolute;
+  right: -8%;
+  cursor: pointer;
+}
+
+.arrow_type_left {
+  height: 2.25rem;
+  top: 20%;
+  position: absolute;
+  left: -8%;
+  cursor: pointer;
+}
+

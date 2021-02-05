@@ -1,0 +1,88 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-family: "FuturaPT";
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #A89365;
+  margin: 0;
+
+  &__span {
+    font-weight: normal;
+    font-size: 18px;
+    color: #A89365;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  &__secondary {
+    font-weight: bold;
+    font-size: 32px;
+    color: #A89365;
+  }
+}
+
+.look {
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline-block;
+  position: relative;
+  margin: 0.1rem;
+
+  span:nth-child(1) {
+    transform: rotate(-45deg)
+  }
+
+  span:nth-child(2) {
+    transform: rotate(45deg)
+  }
+}
+
+.arrow-1 {
+  cursor: pointer;
+  position: relative;
+}
+
+.arrow-1 div {
+  position: relative;
+  width: 20px;
+  height: 4px;
+  background-color: #A89365;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  display: block;
+}
+
+.arrow-1 div::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  top: -4px;
+  right: -2px;
+  background-color: #A89365;
+  transform: rotate(45deg);
+}
+
+.arrow-1 div::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  top: 4px;
+  right: -2px;
+  background-color: #A89365;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  transform: rotate(-45deg);
+}
